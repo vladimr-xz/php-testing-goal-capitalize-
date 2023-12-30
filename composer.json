@@ -2,11 +2,18 @@
     "name": "vova_xz/test-learning",
     "description": "Learning, how to write tests",
     "license": "MIT",
+    "autoload": {
+        "files": [
+            "src/StringUtils.php"
+        ]
+    },
     "authors": [
         {
             "name": "Vladimir",
             "email": "vladimir156xz@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "webmozart/assert": "^1.11"
+    }
 }
