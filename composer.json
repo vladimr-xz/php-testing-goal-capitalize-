@@ -1,0 +1,12 @@
+{
+    "name": "vova_xz/test-learning",
+    "description": "Learning, how to write tests",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladimir",
+            "email": "vladimir156xz@gmail.com"
+        }
+    ],
+    "require": {}
+}
