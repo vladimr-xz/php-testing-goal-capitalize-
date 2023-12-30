@@ -1,13 +1,22 @@
 <?php
 
-require_once("src/StringUtils.php");
+require_once __DIR__ . '/../vendor/autoload.php';
 
-if (StringUtils\capitilize('hello') !== 'Hello') {
-    throw new \Exception("Функция работает неправильно");
-}
+use Webmozart\Assert\Assert;
 
-if (StringUtils\capitilize('') !== '') {
-    throw new \Exception("Функция работает неправильно");
-}
+use function StringUtils\capitilize;
+
+
+// if (StringUtils\capitilize('hello') !== 'Hello') {
+//     throw new \Exception("Функция работает неправильно");
+// }
+
+// if (StringUtils\capitilize('') !== '') {
+//     throw new \Exception("Функция работает неправильно");
+// }
+
+Assert::eq(capitilize('hello'), 'Hello');
+
+Assert::eq(capitilize(''), '');
 
 echo 'Все тесты пройдены, дай краба';
